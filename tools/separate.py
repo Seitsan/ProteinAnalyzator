@@ -11,6 +11,6 @@ for target in targets:
             closest_seq = seq_record
     result_seqs.append(closest_seq)
 
-SeqIO.write(result_seqs[0], "xxsmall.faa", "fasta")
-SeqIO.write(result_seqs[1], "xsmall.faa", "fasta")
-SeqIO.write(result_seqs[2], "small.faa", "fasta")
+SeqIO.write(result_seqs[0], "../xxsmall.faa", "fasta")
+SeqIO.write(result_seqs[1], "../xsmall.faa", "fasta")
+SeqIO.write(result_seqs[2], "../small.faa", "fasta")
