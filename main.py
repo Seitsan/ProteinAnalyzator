@@ -85,8 +85,8 @@ def main(filename, output, mode):
         total_list = Counter()
         while not result_queue.empty():
             stats_list = result_queue.get()
-            for dict in stats_list:
-                total_list[dict['type']] += dict['quantity']
+            for d in stats_list:
+                total_list[d['type']] += d['quantity']
         result = [{'type': k, 'quantity': v} for k, v in total_list.items()]
         if output:
             save_data(result, output)
